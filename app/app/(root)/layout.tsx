@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../../styles/globals.css";
 import { ThemeProvider } from "@/lib/providers/ThemeProvider";
+import { GeistSans } from "geist/font/sans";
 
 export const metadata: Metadata = {
   title: "Waver UI",
@@ -13,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={GeistSans.className}>
       <body>
         <ThemeProvider attribute="class" disableTransitionOnChange>
           <main>{children}</main>

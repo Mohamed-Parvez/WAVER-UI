@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Moon, Sun } from "lucide-react";
+import { MoonStar, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 export function ThemeToggle() {
@@ -19,7 +19,7 @@ export function ThemeToggle() {
           handleClick();
           if (!isOn) {
             setTheme("dark");
-            setIcon(<Moon className="h-[1.2rem] w-[1.2rem]" />);
+            setIcon(<MoonStar className="h-[1.2rem] w-[1.2rem]" />);
           } else {
             setTheme("light");
             setIcon(<Sun className="h-[1.2rem] w-[1.2rem]" />);
