@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../../styles/globals.css";
+import { ThemeProvider } from "@/lib/providers/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Waver UI",
@@ -14,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main>{children}</main>
+        <ThemeProvider attribute="class" disableTransitionOnChange>
+          <main>{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   );
