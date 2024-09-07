@@ -13,7 +13,7 @@ const NavBar = () => {
         <Logo />
         <Menu />
         <div className="hidden md:block">
-          <div className="flex-center gap-6">
+          <div className="flex-between gap-3 lg:gap-5">
             {NavComponents.map((items) => (
               <Link key={items.key} href={items.href}>
                 <p className="body-regular text-gray-600 dark:text-gray-400">
