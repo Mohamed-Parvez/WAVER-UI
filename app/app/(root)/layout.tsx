@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../../styles/globals.css";
 import { ThemeProvider } from "@/lib/providers/ThemeProvider";
 import { GeistSans } from "geist/font/sans";
+import NavBar from "@/components/shared/NavBar";
 
 export const metadata: Metadata = {
   title: "Waver UI",
@@ -16,7 +17,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={GeistSans.className}>
       <body>
-        <ThemeProvider attribute="class" disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NavBar />
           <main>{children}</main>
         </ThemeProvider>
       </body>

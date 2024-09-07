@@ -1,3 +1,183 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .container-2xl {
+    @apply px-4 md:px-8 lg:px-12 mx-auto max-w-screen-2xl w-full;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-start {
+    @apply flex items-start justify-start;
+  }
+
+  .flex-end {
+    @apply flex items-end justify-end;
+  }
+
+  .flex-column {
+    @apply flex-col items-center justify-center;
+  }
+
+  .flex-column-start {
+    @apply flex-col items-start justify-start;
+  }
+
+  .h1-regular {
+    @apply text-[30px] font-normal leading-[42px] tracking-tighter;
+  }
+
+  .h1-bold {
+    @apply text-[30px] font-bold leading-[42px] tracking-tighter;
+  }
+
+  .h1-medium {
+    @apply text-[30px] font-medium leading-[42px] tracking-tighter;
+  }
+
+  .h1-semibold {
+    @apply text-[30px] font-semibold leading-[42px] tracking-tighter;
+  }
+
+  .h2-regular {
+    @apply text-[24px] font-normal leading-[31.2px];
+  }
+
+  .h2-medium {
+    @apply text-[24px] font-medium leading-[31.2px];
+  }
+
+  .h2-bold {
+    @apply text-[24px] font-bold leading-[31.2px];
+  }
+
+  .h2-semibold {
+    @apply text-[24px] font-semibold leading-[31.2px];
+  }
+
+  .h3-regular {
+    @apply text-[20px] font-normal leading-[26px];
+  }
+
+  .h3-bold {
+    @apply text-[20px] font-bold leading-[26px];
+  }
+
+  .h3-semibold {
+    @apply text-[20px] font-semibold leading-[24.8px];
+  }
+
+  .h3-medium {
+    @apply text-[20px] font-medium leading-[24.8px];
+  }
+
+  .base-regular {
+    @apply text-[18px] font-normal leading-[25.2px];
+  }
+
+  .base-medium {
+    @apply text-[18px] font-medium leading-[25.2px];
+  }
+
+  .base-semibold {
+    @apply text-[18px] font-semibold leading-[25.2px];
+  }
+
+  .base-bold {
+    @apply text-[18px] font-bold leading-[140%];
+  }
+
+  .paragraph-regular {
+    @apply text-[16px] font-normal leading-[22.4px];
+  }
+
+  .paragraph-medium {
+    @apply text-[16px] font-medium leading-[22.4px];
+  }
+
+  .paragraph-semibold {
+    @apply text-[16px] font-semibold leading-[20.8px];
+  }
+
+  .paragraph-bold {
+    @apply text-[16px] font-bold leading-[20.8px];
+  }
+
+  .body-regular {
+    @apply text-[14px] font-normal leading-[19.6px];
+  }
+
+  .body-medium {
+    @apply text-[14px] font-medium leading-[18.2px];
+  }
+
+  .body-semibold {
+    @apply text-[14px] font-semibold leading-[18.2px];
+  }
+
+  .body-bold {
+    @apply text-[14px] font-bold leading-[18.2px];
+  }
+
+  .semi-body-regular {
+    @apply text-[13px] font-normal leading-[16.6px];
+  }
+
+  .semi-body-bold {
+    @apply text-[13px] font-bold leading-[16.6px];
+  }
+
+  .semi-body-medium {
+    @apply text-[13px] font-medium leading-[16.6px];
+  }
+
+  .semi-body-semibold {
+    @apply text-[13px] font-semibold leading-[16.6px];
+  }
+
+  .small-regular {
+    @apply text-[12px] font-normal leading-[15.6px];
+  }
+
+  .small-medium {
+    @apply text-[12px] font-medium leading-[15.6px];
+  }
+
+  .small-semibold {
+    @apply text-[12px] font-semibold leading-[15.6px];
+  }
+
+  .small-bold {
+    @apply text-[12px] font-bold leading-[15.6px];
+  }
+
+  .extra-small-regular {
+    @apply text-[10px] font-normal leading-[13px];
+  }
+
+  .extra-small-medium {
+    @apply text-[10px] font-medium leading-[13px];
+  }
+
+  .extra-small-semibold {
+    @apply text-[10px] font-semibold leading-[13px];
+  }
+
+  .hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
