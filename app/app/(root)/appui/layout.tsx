@@ -1,4 +1,4 @@
-import Componentscrollarea from "@/components/ui/componentscrollarea";
+import AppUiscrollarea from "@/components/ui/appuiscroll";
 import React from "react";
 
 const ComponentLayout = ({
@@ -8,7 +8,7 @@ const ComponentLayout = ({
 }>) => {
   return (
     <main className="container-2xl mt-8 flex justify-between">
-      <Componentscrollarea />
+      <AppUiscrollarea />
       {children}
     </main>
   );
