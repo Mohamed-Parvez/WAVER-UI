@@ -15,13 +15,15 @@ export default function Home() {
           </p>
           <ChevronsRight size={20} />
         </Link>
-        <div className="flex-wrap max-w-[700px] md:max-w-[800px] lg:max-w-[900px] w-full">
-          <p className="lg:text-[48px] h2-bold sm:h1-bold md:text-[37px] font-bold md:leading-[45px] lg:leading-[50px] tracking-tighter sm:text-center">
-            Build Fast UI of Your Website with editable & Resuable Tailwind
-            Components
+        <div className="flex-wrap max-w-[500px] md:max-w-[700px] w-full">
+          <p
+            className="lg:text-[68px] h1-bold md:text-[47px] md:leading-[45px]
+           lg:leading-[70px] tracking-tighter sm:text-center"
+          >
+            Build UI with Resuable Tailwind Components
           </p>
         </div>
-        <div className="flex-wrap max-w-screen-sm lg:max-w-screen-md w-full">
+        <div className="flex-wrap max-w-[500px] md:max-w-screen-sm lg:max-w-[660px] w-full">
           <p className="lg:h3-regular paragraph-regular md:base-regular text-gray-500 dark:text-gray-400 sm:text-center">
             Custom Tailwind Css open source component based UI with reusable and
             editable Components with dark mode integrated
