@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/Footer";
 import { ChevronsRight, Star } from "lucide-react";
 import Link from "next/link";
 
@@ -42,6 +43,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }
